@@ -1,7 +1,7 @@
 {
   "name": "predict-function",
   "version": "1.0.0",
-  "main": "index.js"
+  "main": "index.js" ,
   "dependencies": {
     "@azure/data-tables": "^13.2.0"
   }
