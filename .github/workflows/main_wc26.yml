@@ -27,6 +27,6 @@ jobs:
       - name: Deploy to Azure Function App
         uses: azure/functions-action@v1
         with:
-          app-name: 'wc26-bfasg2adf8dza9hx'
+          app-name: 'wc26'
           package: '.'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
