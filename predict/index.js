@@ -10,13 +10,11 @@ module.exports = async function (context, req) {
       throw new Error("Missing request body");
     }
 
-    // Create a client for the Predictions table
     const client = TableClient.fromConnectionString(
       process.env.AzureWebJobsStorage,
       "Predictions"
     );
 
-    // Build the entity to save
     const entity = {
       partitionKey: prediction.userId || "default",
       rowKey: `${prediction.matchId || Date.now()}`,
